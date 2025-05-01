@@ -26,25 +26,76 @@ body {
     width: 30px;
     height: 30px;
   }
-  .content{
+  .content {
     height: 1500px;
     width: 1000px;
-    background-color: green;
-  }
-  .poster img{
-    height: 180px;
-    width: 180px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px;
 
   }
-  .posters{
+  .poster p{
+    color: white;
+  }
+  .poster h4{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+
+  }
+  .poster button{
+    background-color: red;
+
+  }
+  .poster img {
+    height: 180px;
+    width: 150px;
+
+  }
+  .posters {
      display: grid;
      grid-template-columns: repeat(3, 180px);
      gap: 30px;
      justify-content: center;
      margin-bottom: 50px;
+     
     }
     
-  .big-image img{
-    height: 300px;
-    width: 300px;
-  }
+    .big-image {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+        width: 600px;
+      }
+      
+      .big-poster {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: white;
+      }
+      
+      .big-poster img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      
+      .big-image p{
+        color: black;
+      }
+      .big-image h4{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+    
+      }
+      .big-image button{
+        background-color: red;
+    
+      }
